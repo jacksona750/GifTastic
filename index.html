@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid text-center">
+        <h1 class="display-4 ">Giftastic</h1>
+        <p class="lead">Click on a button to display 10 images. Then click on any image to see it animate.<br>
+        Enter any topic in the textbox and click "Add Topic" to create your own button!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="buttons-show"></div>
+    </div>
+
+    <div class="row">
+        <form id="topic-form">
+            <label for="topic-input">Add a type of exercise</label>
+            <input type="text" id="topic-input" value=""><br>
+        
+            <input id="add-topic" type="submit" value="Add Topic">
+        </form>
+    </div>
+    
+    <div class="row">    
+        <div class ="d-flex flex-wrap" id="gifs-show"></div>
+    </div>
+</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
